@@ -1,7 +1,7 @@
 # TWCrack
 
 ____
-Any pentester that has spent enough time in TWC/Spectrum service areas has most likely come across dozens of networks with names like TG852G22 or TC8715D3E, or some other <router model>xx name. Most, if not all, of these networks are just lazy default configurations that can be *very* easily cracked. You really don't even need a program to do it for you (buy why not, right?).
+Any pentester that has spent enough time in TWC/Spectrum service areas has most likely come across dozens of networks with names like TG852G22 or TC8715D3E, or some other {router model}xx name. Most, if not all, of these networks are just lazy default configurations that can be *very* easily cracked. You really don't even need a program to do it for you (buy why not, right?).
 
 Basically, Time Warner / Spectrum sets up (many) default networks like so:
 
