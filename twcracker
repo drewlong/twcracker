@@ -13,7 +13,7 @@ def passgen(bssid, essid)
 end
 
 if ARGV[0].empty?
-  puts "Usage: twcracker.rb -b <BSSID -e <ESSID>"
+  puts "Usage: ./twcracker -b <BSSID -e <ESSID>"
 else
   ARGV.each do |x|
     x = x.strip
