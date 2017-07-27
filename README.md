@@ -21,7 +21,7 @@ This is sort of a pain to do in the field, so I crafted this tiny ruby script to
 
     Usage: ./twcracker -b <BSSID> -e <ESSID>
 
-The script automagically creates the password, prints it off, and then sends the ESSID + BSSID through wpa_passphrase and saves the configuration in <BSSID>.conf. From there, just use wpa_supplicant to authenticate (or just copy/paste the password). 
+The script automagically creates the password, prints it off, and then sends the ESSID + BSSID through wpa_passphrase and saves the configuration in {BSSID}.conf. From there, just use wpa_supplicant to authenticate (or just copy/paste the password). }
 
 Enjoy. 
 
